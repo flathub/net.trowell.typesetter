@@ -1,27 +1,27 @@
 {
-    "id" : "net.trowell.typesetter",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "49",
-    "sdk" : "org.gnome.Sdk",
-    "sdk-extensions" : [
+    "id": "net.trowell.typesetter",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "49",
+    "sdk": "org.gnome.Sdk",
+    "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
     ],
-    "command" : "typesetter",
-    "finish-args" : [
+    "command": "typesetter",
+    "finish-args": [
         "--device=dri",
         "--share=network",
         "--socket=wayland",
         "--socket=fallback-x11",
         "--share=ipc"
     ],
-    "build-options" : {
-        "append-path" : "/usr/lib/sdk/rust-stable/bin",
-        "env" : {
-            "RUST_BACKTRACE" : "1",
-            "RUST_LOG" : "typesetter=debug"
+    "build-options": {
+        "append-path": "/usr/lib/sdk/rust-stable/bin",
+        "env": {
+            "RUST_BACKTRACE": "1",
+            "RUST_LOG": "typesetter=debug"
         }
     },
-    "cleanup" : [
+    "cleanup": [
         "/include",
         "/lib/pkgconfig",
         "/man",
@@ -32,7 +32,7 @@
         "*.la",
         "*.a"
     ],
-    "modules" : [
+    "modules": [
         {
             "name": "libspelling",
             "buildsystem": "meson",
@@ -40,8 +40,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libspelling.git",
-                    "tag": "0.4.9",
-                    "commit": "e41e11d6ca6f5af987a46caa08036d5f0f629892",
+                    "tag": "0.4.10",
+                    "commit": "1facdde8e1c0fd72bed806f9a9be2fbec83af5f2",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -50,13 +50,13 @@
             ]
         },
         {
-            "name" : "typesetter",
-            "builddir" : true,
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "typesetter",
+            "builddir": true,
+            "buildsystem": "meson",
+            "config-opts": [
                 "--buildtype=release"
             ],
-            "sources" : [
+            "sources": [
                 "cargo-sources.json",
                 {
                     "type": "git",
