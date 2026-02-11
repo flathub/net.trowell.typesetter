@@ -1,27 +1,27 @@
 {
-    "id" : "net.trowell.typesetter",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "49",
-    "sdk" : "org.gnome.Sdk",
-    "sdk-extensions" : [
+    "id": "net.trowell.typesetter",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "49",
+    "sdk": "org.gnome.Sdk",
+    "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
     ],
-    "command" : "typesetter",
-    "finish-args" : [
+    "command": "typesetter",
+    "finish-args": [
         "--device=dri",
         "--share=network",
         "--socket=wayland",
         "--socket=fallback-x11",
         "--share=ipc"
     ],
-    "build-options" : {
-        "append-path" : "/usr/lib/sdk/rust-stable/bin",
-        "env" : {
-            "RUST_BACKTRACE" : "1",
-            "RUST_LOG" : "typesetter=debug"
+    "build-options": {
+        "append-path": "/usr/lib/sdk/rust-stable/bin",
+        "env": {
+            "RUST_BACKTRACE": "1",
+            "RUST_LOG": "typesetter=debug"
         }
     },
-    "cleanup" : [
+    "cleanup": [
         "/include",
         "/lib/pkgconfig",
         "/man",
@@ -32,7 +32,7 @@
         "*.la",
         "*.a"
     ],
-    "modules" : [
+    "modules": [
         {
             "name": "libspelling",
             "buildsystem": "meson",
@@ -50,13 +50,13 @@
             ]
         },
         {
-            "name" : "typesetter",
-            "builddir" : true,
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "typesetter",
+            "builddir": true,
+            "buildsystem": "meson",
+            "config-opts": [
                 "--buildtype=release"
             ],
-            "sources" : [
+            "sources": [
                 "cargo-sources.json",
                 {
                     "type": "git",
