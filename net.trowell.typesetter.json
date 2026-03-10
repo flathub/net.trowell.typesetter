@@ -41,11 +41,7 @@
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libspelling.git",
                     "tag": "0.4.10",
-                    "commit": "1facdde8e1c0fd72bed806f9a9be2fbec83af5f2",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^([\\d.]+)$"
-                    }
+                    "commit": "1facdde8e1c0fd72bed806f9a9be2fbec83af5f2"
                 }
             ]
         },
@@ -61,8 +57,8 @@
                 {
                     "type": "git",
                     "url": "https://codeberg.org/haydn/typesetter.git",
-                    "tag": "v0.11.2",
-                    "commit": "851d4662b0e6fc152a26a08589fe536d327cbacd"
+                    "tag": "v0.11.3",
+                    "commit": "79385207e1c4f0d1ef989cd02912bff63c8cf94b"
                 },
                 {
                     "type": "inline",
