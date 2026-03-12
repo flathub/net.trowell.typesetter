@@ -2,6 +2,7 @@
     "id": "net.trowell.typesetter",
     "runtime": "org.gnome.Platform",
     "runtime-version": "49",
+    "separate-locales": false,
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -58,7 +59,7 @@
                     "type": "git",
                     "url": "https://codeberg.org/haydn/typesetter.git",
                     "tag": "v0.11.3",
-                    "commit": "30131150f557045a19c20f28d2707559cfa63842"
+                    "commit": "a48ba5c1d72d5dfd2ea30c998df837015bfca1ca"
                 },
                 {
                     "type": "inline",
