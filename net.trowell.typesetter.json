@@ -2,6 +2,7 @@
     "id": "net.trowell.typesetter",
     "runtime": "org.gnome.Platform",
     "runtime-version": "49",
+    "separate-locales": false,
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -41,11 +42,7 @@
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libspelling.git",
                     "tag": "0.4.10",
-                    "commit": "1facdde8e1c0fd72bed806f9a9be2fbec83af5f2",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^([\\d.]+)$"
-                    }
+                    "commit": "1facdde8e1c0fd72bed806f9a9be2fbec83af5f2"
                 }
             ]
         },
@@ -61,8 +58,8 @@
                 {
                     "type": "git",
                     "url": "https://codeberg.org/haydn/typesetter.git",
-                    "tag": "v0.11.2",
-                    "commit": "851d4662b0e6fc152a26a08589fe536d327cbacd"
+                    "tag": "v0.11.3",
+                    "commit": "a48ba5c1d72d5dfd2ea30c998df837015bfca1ca"
                 },
                 {
                     "type": "inline",
