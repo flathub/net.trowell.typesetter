@@ -1,7 +1,7 @@
 {
     "id": "net.trowell.typesetter",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "separate-locales": false,
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
@@ -55,8 +55,8 @@
                 {
                     "type": "git",
                     "url": "https://codeberg.org/haydn/typesetter.git",
-                    "tag": "v0.12.4",
-                    "commit": "f960463a043966b15c9eee13463eeb5fb4880109"
+                    "tag": "v0.12.5",
+                    "commit": "555ef6db61b89ce3b5375056f6d4015038888532"
                 },
                 {
                     "type": "inline",
