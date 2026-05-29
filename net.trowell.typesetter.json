@@ -51,12 +51,12 @@
                 "--buildtype=release"
             ],
             "sources": [
-                "cargo-sources.json",
+                "generated-sources.json",
                 {
                     "type": "git",
                     "url": "https://codeberg.org/haydn/typesetter.git",
-                    "tag": "v0.13.1",
-                    "commit": "f943503bfb17d63959c10ef6ffdfda83d458f226"
+                    "tag": "v0.13.2",
+                    "commit": "b9361db9de1b0415feabca0f421a074515f6c281"
                 },
                 {
                     "type": "inline",
