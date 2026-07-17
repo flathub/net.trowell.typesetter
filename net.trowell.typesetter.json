@@ -56,7 +56,7 @@
                     "type": "git",
                     "url": "https://codeberg.org/haydn/typesetter.git",
                     "tag": "v0.15.0",
-                    "commit": "bed59c1ee2f3f7248110f1766312641099aa355e"
+                    "commit": "89ab5df4b266183e3a913733f4897b2cb994bc57"
                 },
                 {
                     "type": "inline",
