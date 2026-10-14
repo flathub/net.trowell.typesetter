@@ -1,7 +1,7 @@
 {
     "id": "net.trowell.typesetter",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
+    "runtime-version": "51",
     "separate-locales": false,
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
@@ -55,14 +55,14 @@
                 {
                     "type": "git",
                     "url": "https://codeberg.org/haydn/typesetter.git",
-                    "tag": "v0.15.2",
-                    "commit": "1271b451fa6d00d50708cf6d9aeaf570a2af79cd"
+                    "tag": "v0.16.0",
+                    "commit": "7f64b3125a9b95660338329df26cb728bdaca37b"
                 },
                 {
-                    "type": "inline",
-                    "contents": "[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n",
-                    "dest": ".cargo",
-                    "dest-filename": "config.toml"
+                  "type": "inline",
+                  "contents": "[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.\"https://github.com/haydntrowell/mathml2latex\"]\ngit = \"https://github.com/haydntrowell/mathml2latex\"\ntag = \"0.1.0\"\nreplace-with = \"vendored-sources\"\n",
+                  "dest": ".cargo",
+                  "dest-filename": "config.toml"
                 }
             ]
         }
